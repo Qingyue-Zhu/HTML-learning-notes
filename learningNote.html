@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html learning notes</title>
+</head>
+
+<body bgcolor="pink">
+    <!-- Make the text bold -->
+    This is text <strong>in bold</strong>
+    <br>
+    <!-- Slant the text 使文字倾斜 -->
+    The text <em>is slanted</em>
+    <br>
+    <!-- Add a strikeout line to the text 为文字添加删除线 -->
+    <del>This line was deleted</del>
+    <br>
+    <!-- Add underline to text -->
+    <ins>This line of text is underlined</ins>
+    <div>text in div tag</div>
+    <div>text in div tag</div>
+    <span>text in span</span>
+    <span>text in span</span>
+    <br>
+    <!-- alt: Text that will be displayed when the picture cannot be displayed -->
+    <!-- title: The text that appears when you move the mouse over the picture -->
+    <img src="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg?w=170&h=170"
+        alt="this is the picture of a dog" title="dog" width="500" height="500" border="20">
+    <br>
+    <img src="https://i.natgcceofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg?w=170&h=170"
+        alt="this is the picture of a dog" title="dog">
+    <pre>
+        pre tag can help me to print the original format
+        so useful
+    </pre>
+    <!-- The 2 will appear in the upper right of the 10 -->
+    10<sup>2</sup>
+    <!-- The m will appear below and to the right of the 10 -->
+    10<sub>m</sub>
+    <font color="red" size="50">aaaa</font>
+    <!-- &lt less than &gt greater than -->
+    b&lt;a&gt;c
+    <br>
+    <!-- &nbsp = space -->
+    a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bc
+    <table border="1px" width="60%" height="150px" align="center">
+        <tr align="center">
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td align="center">i</td>
+        </tr>
+    </table>
+    <table border="1px" width="50%">
+        <th>numA</th>
+        <th>numB</th>
+        <th>numC</th>
+        <tr>
+            <!-- colspan to merge column 横着合并单元格 -->
+            <td colspan="2">1</td>
+            <td>3</td>
+        </tr>
+        <!-- align the text to center -->
+        <tr align="center">
+            <td>4</td>
+            <td>5</td>
+            <!-- rowspan to merge row 竖着合并单元格 -->
+            <td rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+    <!-- the link after href can be both a link to the website and a link to the local file -->
+    <a href="http://www.google.com">Google</a>
+    <a href="image/cat.jpg">baby cat</a>
+    <a href="http://www.google.com"><img src="image/googlelogo.png"></a>
+    <br>
+    target="_blank"
+    <!-- target="_blank" means when u click the link it will show the website in the new window -->
+    <a href="http://www.google.com" target="_blank"><img src="image/googlelogo.png"></a>
+    <br>
+    <!-- target="_self" means when u click the link it will show the website on the current page -->
+    target="_self"
+    <a href="http://www.google.com" target="_self"><img src="image/googlelogo.png"></a>
+    <!-- ol ordered list -->
+    <!-- type="I" means the order numbers are presented in Roman numerals -->
+    <ol type="I">
+        <li>fruit
+            <ol type="a">
+                <li>apple</li>
+                <li>banana</li>
+                <li>orange</li>
+            </ol>
+        </li>
+        <li>vegetable</li>
+        <li>dessert</li>
+    </ol>
+    <ul>
+        <li>friday</li>
+        <li>saturday</li>
+        <li>sunday</li>
+    </ul>
+    <!-- http://192.168.111.3:8080/oa/save 这是请求路径，表单提交数据最终提交给 -->
+    <!-- 192.168.111.3机器上的8080端口对应的软件 -->
+    <form action="http://192.168.111.3:8080/oa/save">
+        <!-- a button to submit the form -->
+        <input type="submit">
+        <!-- a normal button -->
+        <!-- the text in value is the text on the button -->
+        <input type="button" value="this is a button">
+        <!-- The text box -->
+        <input type="text">
+        <input type="password">
+        <!-- 复选 -->
+        <input type="checkbox">
+        <!-- 单选 -->
+        <input type="radio">
+        <!-- delete the input in the form -->
+        <input type="reset">
+    </form>
+    <!-- this button is similar to the link. However, the difference is that you can send the data inputed when using the button -->
+    <!-- the format to submit the data -->
+    <!-- action?name=value&name=value&name=value&name=value -->
+    <!-- the input with attribute name will be sent to the server -->
+    <!-- if u dont want to send the input dont write the name attribute -->
+    <!-- the default value of value is "" -->
+    <form action="http://www.google.com">
+        <input type="text" name="abc">
+        <input type="submit" value="google">
+    </form>
+    <!-- size="2" means there are two options displayed before the mouse scroll -->
+    <!-- multiple="multiple" means user can select multiple option by pressing ctrl and click -->
+    <form action="">
+        <select name="adress" multiple="multiple" size="2">
+            <option value="nsw">NSW</option>
+            <option value="act">ACT</option>
+            <option value="wa">WA</option>
+            <option value="vic">VIC</option>
+        </select>
+    </form>
+    <form action="">
+        <input type="file">
+    </form>
+    <form action="http://www.google.com">
+        <!-- type="hidden" users don't see it on the web, but the data is automatically submitted to the server when the form is submitted -->
+        <input type="hidden" name="userid" value="111">
+        Username
+        <input type="text" name="username">
+        <input type="submit">
+    </form>
+    <form action="">
+        <!-- both disabled and readonly are read only -->
+        <!-- the value with readonly can be submitted to the server -->
+        <!-- the value with disabled can NOT be submitted to the server -->
+        Username: <input type="text" name="user" disabled>
+        Phone number: <input type="text" value="110" readonly>
+        State: <input type="text" maxlength="3">
+    </form>
+</body>
+
+</html>
